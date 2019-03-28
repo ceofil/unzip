@@ -1,31 +1,35 @@
-'''
-import zipfile
-zip_ref = zipfile.ZipFile('6.zip', 'r')
-zip_ref.extractall();
-zip_ref.close()
-'''
-
-import zipfile
-fantasy_zip = zipfile.ZipFile('C:\\Users\\Teofil\\PycharmProjects\\unzip\\6.zip')
-fantasy_zip.extractall('C:\\Users\\Teofil\\PycharmProjects\\unzip\\Fantasy')
-
-fantasy_zip.close()
-
-'''
 #!/usr/bin/python
-
 import threading
 import time
 
-def worker():
-    """thread worker function"""
-    time.sleep(10);
-    print ('Worker')
-    return
+
+class MyThread (threading.Thread):
+    def __init__(self, thread_id, name):
+        threading.Thread.__init__(self)
+        self.thread_id = thread_id
+        self.name = name
+
+    def run(self):
+        print('Starting ' + self.name)
+        process_data(self.name)
+        print('Exiting ' + self.name)
+
+
+def process_data(thread_name):
+    for i in range(5):
+        print("{} processing info   {}   {}\n".format(thread_name, i, time.strftime('%X')))
+        time.sleep(2)
+
 
 threads = []
-for i in range(5):
-    t = threading.Thread(target=worker)
-    threads.append(t)
-    t.start()
-'''
+threadID = 1
+
+# Create new threads
+for i in range(3):
+    thread = MyThread(threadID, "Thread {}".format(i))
+    thread.start()
+    threads.append(thread)
+    threadID += 1
+
+
+print('Exiting Main Thread')

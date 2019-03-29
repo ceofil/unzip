@@ -214,3 +214,79 @@ INFO:root:file C:\Users\Teofil\Desktop\directory\small file (4).zip; duration 0;
 INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 0; size 1447568;
 INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 3; size 1447568;
 INFO:root:size:12178152 duration:8 no-threads:1 gtimout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (5).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (1).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:28073628 timeout:True
+INFO:root:size:0 duration:11 no-threads:1 gtimout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:28073628 timeout:True
+INFO:root:size:0 duration:12 no-threads:1 gtimout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:28073628 timeout:True
+INFO:root:size:0 duration:11 no-threads:1 gtimout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:21 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:21 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:21 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:21 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:21 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:21 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (1).zip duration:9 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (5).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (3).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:size:10006800 duration:32 no-threads:1 gtimout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (1).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (5).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (3).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:size:6174072 duration:25 no-threads:1 gtimout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:2 size:9357876 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (1).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (1).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:nr_files:11 files_extracted:11 size:18810884 duration:6 no-threads:1 gtimout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (1).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (3).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (4).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (5).zip duration:0 size:1277576 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (1).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (2).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (3).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (4).zip duration:0 size:723784 timeout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\small file (5).zip duration:0 size:723784 timeout:False
+INFO:root:nr_files:11 files_extracted:7 size:6174072 duration:26 no-threads:1 gtimout:False
+INFO:root:file:C:\Users\Teofil\Desktop\directory\111.zip duration:6 size:9357876 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (1).zip duration:6 size:1277576 timeout:True
+INFO:root:file:C:\Users\Teofil\Desktop\directory\avg_file (2).zip duration:6 size:1277576 timeout:True
+INFO:root:nr_files:11 files_extracted:0 size:0 duration:21 no-threads:1 gtimout:True

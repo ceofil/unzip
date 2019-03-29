@@ -10,7 +10,7 @@ logging.basicConfig(filename ='test.log', level=logging.INFO)
 directory = 'C:\\Users\\Teofil\\Desktop\\directory'
 output_dir = 'C:\\Users\\Teofil\\Desktop\\directory\\Fantasy'
 
-global_timeout = 10
+global_timeout = 20
 file_timeout = 5
 timeout_flag = False
 
@@ -82,11 +82,12 @@ def every_thread_has_finished():
     return True
 
 
-def log_thread_info(thr):
-    logging.info("file {}; duration {}; size {};".format(\
+def log_thread_info(thread_it, local_timeout):
+    logging.info("file:{} duration:{} size:{} timeout:{}".format(\
         thread_it.file_to_extract.filename,\
         thread_it.get_elapsed_time(),\
-        thread_it.get_file_size()))
+        thread_it.get_file_size(),\
+        local_timeout))
 
 
 def stop_all_threads():
@@ -105,7 +106,7 @@ def get_global_time():
 
 
 # the loop in update_console takes a lot to finish
-# so I have to check for the flag in every (slow) loop otherwise the timeout might be off by a few seconds
+# so I have to check for the flag in every iteration otherwise the timeout might be off by a few seconds
 def update_timeout_flag():
     if get_global_time() > global_timeout:
         print('GLOBAL TIMEOUT')
@@ -128,18 +129,21 @@ for i in range(number_of_threads):
 
 
 while (not files.empty()) and (not timeout_flag):
-
     for thread_it in threads:
         timeout_flag = update_timeout_flag()
         if timeout_flag:
             break
+        if thread_it.get_elapsed_time() > file_timeout:
+            thread_it.occupied = False
+            log_thread_info(thread_it, True)
         if thread_it.has_just_finished:
             thread_it.has_just_finished = False
             nr_files_extracted += 1
             update_console()
-            log_thread_info(thread_it)
+            log_thread_info(thread_it, False)
             sum_of_file_size += thread_it.get_file_size()
-            thread_it.file_to_extract.close()
+            if not thread_it.file_to_extract.fp:
+                thread_it.file_to_extract.close()
         if (not files.empty()) and (not thread_it.occupied):
             thread_it.occupy(files.get())
             update_console()
@@ -153,7 +157,7 @@ while (not every_thread_has_finished()) and (not timeout_flag):
             thread_it.has_just_finished = False
             nr_files_extracted += 1
             update_console()
-            log_thread_info(thread_it)
+            log_thread_info(thread_it, False)
             sum_of_file_size += thread_it.get_file_size()
             if not thread_it.file_to_extract.fp:
                 thread_it.file_to_extract.close()
@@ -161,7 +165,8 @@ while (not every_thread_has_finished()) and (not timeout_flag):
 
 update_console()
 stop_all_threads()
-logging.info("size:{} duration:{} no-threads:{} gtimout:{}".format(sum_of_file_size, get_global_time(), number_of_threads,timeout_flag))
+logging.info("nr_files:{} files_extracted:{} size:{} duration:{} no-threads:{} gtimout:{}".format(\
+    nr_of_files, nr_files_extracted, sum_of_file_size, get_global_time(), number_of_threads,timeout_flag))
 
 if not timeout_flag:
     print("{} / {} files extracted successfully".format(nr_files_extracted, nr_of_files))

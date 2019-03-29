@@ -7,6 +7,8 @@ import queue
 import zipfile
 import os
 
+
+directory = 'C:\\Users\\Teofil\\Desktop\\directory'
 files = queue.Queue()
 sum_of_times = 0
 N = 4  # number of threads

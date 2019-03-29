@@ -160,3 +160,57 @@ INFO:root:file C:\Users\Teofil\Desktop\directory\small file (5).zip; duration 0;
 INFO:root:file C:\Users\Teofil\Desktop\directory\small file (5).zip; duration 0; size 723784;
 INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 3; size 1447568;
 INFO:root:extracted 10900576 of data in 7s with 1 threads
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (2).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (2).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (3).zip; duration 6; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (5).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (1).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (1).zip; duration 3; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (3).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (3).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (5).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 0; size 1447568;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 3; size 1447568;
+INFO:root:extracted 11624360 of data in 22s with 1 threads
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (1).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (2).zip; duration 5; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (3).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (4).zip; duration 3; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (1).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (1).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (2).zip; duration 3; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (3).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (4).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (5).zip; duration 0; size 723784;
+INFO:root:extracted 9453008 of data in 21s with 1 threads
+INFO:root:extracted 0 of data in 25s with 11 threads
+INFO:root:size:0 duration:15 no-threads:11 gtimout:True
+INFO:root:size:0 duration:14 no-threads:11 gtimout:True
+INFO:root:size:0 duration:17 no-threads:11 gtimout:True
+INFO:root:size:0 duration:15 no-threads:11 gtimout:True
+INFO:root:size:0 duration:11 no-threads:11 gtimout:True
+INFO:root:size:0 duration:12 no-threads:11 gtimout:True
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (1).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (3).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (3).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (4).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (5).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (1).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (2).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (3).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (4).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 0; size 1447568;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 3; size 1447568;
+INFO:root:size:12178152 duration:7 no-threads:1 gtimout:False
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (1).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (2).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (3).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (4).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\avg_file (5).zip; duration 0; size 1277576;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (2).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (2).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (3).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (4).zip; duration 0; size 723784;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 0; size 1447568;
+INFO:root:file C:\Users\Teofil\Desktop\directory\small file (6).zip; duration 3; size 1447568;
+INFO:root:size:12178152 duration:8 no-threads:1 gtimout:False

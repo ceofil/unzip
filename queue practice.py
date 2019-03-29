@@ -17,6 +17,7 @@ while not L.empty():
     path = directory + '\\' + L.get()
     fantasy_zip = zipfile.ZipFile(path)
     fantasy_zip.extractall(output_dir)
+    fantasy_zip.getinfo()
     print(path)
     fantasy_zip.close()
 

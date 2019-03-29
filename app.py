@@ -2,17 +2,18 @@
 import threading
 import time
 from math import *
-import random
 import queue
 import zipfile
 import os
 
 
 directory = 'C:\\Users\\Teofil\\Desktop\\directory'
+output_dir = 'C:\\Users\\Teofil\\Desktop\\directory\\Fantasy'
+
 files = queue.Queue()
 sum_of_times = 0
 N = 4  # number of threads
-nr_of_files = 12
+nr_of_files = 0
 nr_files_extracted = 0
 threads = []
 
@@ -21,24 +22,24 @@ class MyThread (threading.Thread):
     def __init__(self, thread_id):
         threading.Thread.__init__(self)
         self.thread_id = thread_id
-        self.data_size = 0
         self.occupied = False
         self.time_stamp = time.time()
         self.exit_flag = False
         self.has_just_been_occupied = False
         self.has_just_finished = False # update_console will be called only if this is true
-        self.file = None
+        self.file_to_extract = None
 
-    def extract_file(self): # to simulate extracting a big file until I implement that
-        time.sleep(self.data_size)
+    def extract_file(self):
+        self.file_to_extract.extractall(output_dir)
+        self.file_to_extract.close()
         self.occupied = False
         self.has_just_finished = True
 
-    def occupy(self, data_size):
+    def occupy(self, file_name):
+        self.file_to_extract = zipfile.ZipFile(directory + '\\' + file_name)
         self.occupied = True
         self.has_just_been_occupied = True
         self.time_stamp = time.time()
-        self.data_size = data_size
 
     def run(self):
         while not self.exit_flag:
@@ -53,11 +54,12 @@ def update_console():
     for thr in threads:
         print("Thread {}".format(thr.thread_id), end=' ')
         if thr.occupied:
-            print("is extracting a file of size {}".format(thr.data_size))
+            print("is extracting {}".format(thr.file_to_extract.filename))
         elif files.empty():
             print('is FREE but the queue is empty ')
         else:
             print('is FREE ')
+    print('\n\n')
 
 
 def every_thread_has_finished():
@@ -69,12 +71,11 @@ def every_thread_has_finished():
 
 start = time.time()
 
-# add some "files" to the queue
-for i in range(nr_of_files):
-    size = random.randint(1, 5)
-    files.put(size)
-    sum_of_times += size
-    print(size)
+# add all the files in the queue
+for s in os.listdir(directory):
+    if '.zip' in s:
+        files.put(s)
+        nr_of_files += 1
 
 # initialize threads
 for i in range(N):
@@ -85,12 +86,12 @@ for i in range(N):
 
 while not files.empty():
     for thread_it in threads:
-        if (not files.empty()) and (not thread_it.occupied):
-            thread_it.occupy(files.get())
-            update_console()
-        elif thread_it.has_just_finished:
+        if thread_it.has_just_finished:
             thread_it.has_just_finished = False
             nr_files_extracted += 1
+            update_console()
+        if (not files.empty()) and (not thread_it.occupied):
+            thread_it.occupy(files.get())
             update_console()
 
 while not every_thread_has_finished():
@@ -109,6 +110,5 @@ for thread_to_kill in threads:
     thread_to_kill.join()
 
 end = time.time()
-print(floor(end-start))  # if threading is working correctly this should be lower than sum_of_times
-print(sum_of_times)
-
+elapsed_time = end - start
+print(" Elapsed time: {}".format(elapsed_time))

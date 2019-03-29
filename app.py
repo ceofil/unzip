@@ -6,15 +6,16 @@ import zipfile
 import os
 import logging
 
-logging.basicConfig(filename ='test.log', level=logging.INFO)
+logging_file_path = 'C:\\Users\\Teofil\\Desktop\\directory\\test.log'
 directory = 'C:\\Users\\Teofil\\Desktop\\directory'
 output_dir = 'C:\\Users\\Teofil\\Desktop\\directory\\Fantasy'
+logging.basicConfig(filename=logging_file_path, level=logging.INFO)
 
 global_timeout = 20
 file_timeout = 5
 timeout_flag = False
 
-number_of_threads = 1
+number_of_threads = 4
 nr_of_files = 0
 nr_files_extracted = 0
 sum_of_file_size = 0

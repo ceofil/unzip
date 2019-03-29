@@ -5,17 +5,29 @@ import queue
 import zipfile
 import os
 import logging
+import argparse
 
-logging_file_path = 'C:\\Users\\Teofil\\Desktop\\directory\\test.log'
-directory = 'C:\\Users\\Teofil\\Desktop\\directory'
-output_dir = 'C:\\Users\\Teofil\\Desktop\\directory\\Fantasy'
+#python C:\Users\Teofil\PycharmProjects\unzip\munzip.py -t 4 -log C:\Users\Teofil\Desktop\directory\test.log
+# -ttimeout 5 -gtimeout 20 C:\Users\Teofil\Desktop\directory
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', help='number of threads', type=int)
+parser.add_argument('-log', help='absolute path to logging file', type=str)
+parser.add_argument('-ttimeout', help='time limit for each file', type=int)
+parser.add_argument('-gtimeout', help='global time limit', type=int)
+parser.add_argument('directory', help='absolute path to the zip files directory', type=str)
+args = parser.parse_args()
+
+logging_file_path = args.log
+directory = args.directory
+output_dir = directory + '\\extracted_files'
 logging.basicConfig(filename=logging_file_path, level=logging.INFO)
 
-global_timeout = 20
-file_timeout = 5
+global_timeout = args.gtimeout
+file_timeout = args.ttimeout
 timeout_flag = False
 
-number_of_threads = 4
+number_of_threads = args.t
 nr_of_files = 0
 nr_files_extracted = 0
 sum_of_file_size = 0
